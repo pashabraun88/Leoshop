@@ -1,0 +1,27 @@
+.title {
+  max-width: 1000px;
+  width: 100%;
+  background-color: #c7c7c7;
+  color: #fff;
+  height: 50px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.title h3 {
+  text-transform: uppercase;
+}
+
+.container_items {
+  display: flex;
+  max-width: 1200px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 0 auto;
+}
