@@ -12,6 +12,31 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
+.category {
+  width: 120px;
+  background-color: #f0f0f0; /* Світло-сірий фон */
+  color: #333; /* Темно-сірий текст */
+  padding: 10px 15px; /* Внутрішні відступи */
+  border-radius: 5px; /* Закруглені краї */
+  font-weight: bold; /* Жирний текст */
+  position: relative; /* Встановлюємо позицію для псевдоелемента */
+  z-index: 10; /* Підняти над іншими елементами */
+  display: inline-block; /* Дозволяє мати розмір лише під текст */
+  margin-right: 120px; /* Зсуває вліво, створюючи 3D ефект */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Тінь для 3D ефекту */
+  text-transform: capitalize;
+}
+
+.category::before {
+  content: ""; /* Псевдоелемент для додаткового ефекту */
+  position: absolute; /* Абсолютне позиціювання */
+  top: -1px; /* Відстань зверху */
+  left: 0; /* Відстань зліва */
+  right: 0; /* Відстань справа */
+  bottom: 0; /* Відстань знизу */
+  z-index: -1; /* Під текстом */
+  transform: translate(-5px, -5px); /* Зсуває контур, створюючи 3D ефект */
+}
 
 .product_item_img img {
   width: 200px;

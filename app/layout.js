@@ -7,6 +7,7 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import HeaderSlider from "./components/HeaderSlider/HeaderSlider";
 import ProductsList from "./components/ProductsList/ProductsList";
 import HomePage from "./components/HomePage/HomePage";
+import Footer from "./components/Footer/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -53,11 +54,11 @@ export default function RootLayout({ children }) {
         <ClientProvider>
           <Navbar />
           <Sidebar />
-          <HomePage />
         </ClientProvider>
         <div className="container">
           {/* <HeaderSlider /> */}
           {children}
+          <Footer />
         </div>
       </body>
     </html>

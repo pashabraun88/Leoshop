@@ -33,7 +33,7 @@ header {
 }
 
 .container {
-  padding: 50px;
+  padding: 20px;
 }
 
 a {
@@ -45,10 +45,10 @@ a {
 }
 
 a:hover {
-  color: #000;
+  color: #fff;
   text-decoration: none;
   cursor: pointer;
-  background: #e8e8e8;
+  background: #fdfdfdf5;
   border-radius: 4px;
 }
 
